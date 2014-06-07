@@ -219,6 +219,7 @@ include_directories(
 add_executable(glowing-adventure
   main.cpp
   knapsack_solver.cpp
+	gloop_solver.cpp
   )
 
 target_link_libraries(glowing-adventure
