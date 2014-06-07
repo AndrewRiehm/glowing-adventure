@@ -194,9 +194,9 @@ add_definitions(
 
 set(Boost_USE_MULTITHREAD ON)
 
-find_package(Boost REQUIRED
-  date_time
-)
+#find_package(Boost REQUIRED
+#  date_time
+#)
 
 # find_package(LibXml2 REQUIRED)
 
@@ -206,7 +206,7 @@ find_package(Boost REQUIRED
 # ----------------------------------------------------------------------
 
 include_directories(
-  ${Boost_INCLUDE_DIR}
+#  ${Boost_INCLUDE_DIR}
 #  ${LIBXML2_INCLUDE_DIR}
   .
   )
@@ -218,13 +218,15 @@ include_directories(
 
 add_executable(glowing-adventure
   main.cpp
+  knapsack_solver.cpp
   )
 
 target_link_libraries(glowing-adventure
-  ${Boost_LIBRARIES}
+  # ${Boost_LIBRARIES}
   # pugixml
   # pqxx
   )
+
 
 # ----------------------------------------------------------------------
 # Installation
