@@ -10,9 +10,10 @@
 
 #include <vector>
 
-std::vector<bool> gloop_solver(
-		std::vector<size_t> values,
-		std::vector<size_t> weights,
+#include "knapsack.hpp"
+
+std::vector<knapsack_object> gloop_solver(
+		std::vector<knapsack_object> objects,
 		size_t capacity);
 
 #endif

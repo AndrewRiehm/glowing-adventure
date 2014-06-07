@@ -2,12 +2,12 @@
 
 using std::vector;
 
-vector<bool> knapsack_solver(vector<size_t> values,
-                             vector<size_t> weights,
-                             size_t capacity)
+vector<knapsack_object> knapsack_solver(
+		vector<knapsack_object> objects,
+		size_t capacity)
 {
-    vector<bool> solution(values.size());
+	vector<knapsack_object> solution;
 
-    return solution;
+	return solution;
 
 }
