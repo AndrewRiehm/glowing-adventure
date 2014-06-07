@@ -218,7 +218,7 @@ include_directories(
 
 add_executable(glowing-adventure
   main.cpp
-  knapsack_solver.cpp
+  density_solver.cpp
 	gloop_solver.cpp
   )
 
